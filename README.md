@@ -86,6 +86,36 @@ to screen to detect this record (TD); and (2) the Average Time to Discover
 (ATD) as an indicator of how many records need to be screened on average to
 find all relevant records in the dataset.
 
+Confusion matrix values consist of True Positives (TP), False Positives (FP), True Negatives (TN), and False Negatives (FN). Most metrics (e.g., precision, False Positive Rate, F score) can be calculated from these values. See [O'Mara-Eves et al. (2015)](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/2046-4053-4-5) for a comprehensive overview of metrics. Similarly, various plots can be created from these values (e.g., ROC curve, recall vs precision)
+
+Values are retrieved at recall (r%).
+
+|                      | Definition                                                                             | Calculation                     |   
+|----------------------|----------------------------------------------------------------------------------------|---------------------------------|
+| True Postives (TP)   | The number of relevant records found at recall level.                                  | Total Relevant Records * r%     |      
+| False Postives (TP)  | The number of irrelevant records reviewed at recall level.                             | Records Reviewed – TP           |
+| True Negatives (TN)  | The number of irrelevant records correctly not reviewed at recall level.               | Total Irrelevant Records – FP   |  
+| False Negatives (FN) | The number of relevant records not reviewed at recall level (missing relevant records) | Total Relevant Records – TP     | 
+|----------------------|----------------------------------------------------------------------------------------|---------------------------------|
+
+Specificity / True Negative Rate (TNR) 
+[Kusa et al. (2023)](https://www.sciencedirect.com/science/article/pii/S2667305323000182) propose to normalize the commonly used WSS measure for class imbalance (nWSS). Moreover, they showed that nWSS is equal to the True Negative Rate (TNR). The TNR is the proportion of irrelevant records that were correctly not reviewed at level of recall. This metric is useful to compare performance in terms of work saved across datasets and models while controlling for dataset class imbalance. 
+
+Illustrating Example at 95% recall:
+
+|--------------------|-------------------|
+| Total records 	 | 2000              |
+| Records Reviewed	 | 1100              |
+| Relevant Records 	 | 100               |
+| Irrelevant Records | 1900              |
+| Class imbalance 	 | 5%                |
+| TP	             | 95                |
+| FP	             | 1100 – 95 = 1005  |
+| TN	             | 1900 – 1005 = 895 |
+| FN	             | 100 – 95 = 5      |
+| TNR95%	         | 895 / 1900 = 0.47 |
+|--------------------|-------------------|
+
 
 ## Basic usage
 
