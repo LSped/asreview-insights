@@ -472,10 +472,80 @@ which results in
                         575
                     ]
                 ]
+            }, 
+            {
+                "id": "tp",
+                "title": "True Positives",
+                "value": [
+                    [
+                        0.95,
+                        39
+                    ],
+                    [
+                        1.0,
+                        42
+                    ]
+                ]
+            },
+            {
+                "id": "fp",
+                "title": "False Positives",
+                "value": [
+                    [
+                        0.95,
+                        122
+                    ],
+                    [
+                        1.0,
+                        517
+                    ]
+                ]
+            },
+            {
+                "id": "tn",
+                "title": "True Negatives",
+                "value": [
+                    [
+                        0.95,
+                        6023
+                    ],
+                    [
+                        1.0,
+                        5628
+                    ]
+                ]
+            },
+            {
+                "id": "fn",
+                "title": "False Negatives",
+                "value": [
+                    [
+                        0.95,
+                        3
+                    ],
+                    [
+                        1.0,
+                        0
+                    ]
+                ]
+            },
+            {
+                "id": "tnr",
+                "title": "True Negative Rate (Specificity)",
+                "value": [
+                    [
+                        0.95,
+                        0.980146
+                    ],
+                    [
+                        1.0,
+                        0.915867
+                    ]
+                ]
             }
         ]
     }
-}
+}        
 ```
 
 Each available item has two values. The first value is the value at which the
