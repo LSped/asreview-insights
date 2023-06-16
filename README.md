@@ -92,8 +92,8 @@ Values are retrieved at recall (r%).
 
 |                      | Definition                                                                             | Calculation                     |   
 |----------------------|----------------------------------------------------------------------------------------|---------------------------------|
-| True Postives (TP)   | The number of relevant records found at recall level.                                  | Relevant Records * r%           |      
-| False Postives (FP)  | The number of irrelevant records reviewed at recall level.                             | Records Reviewed – TP           |
+| True Positives (TP)  | The number of relevant records found at recall level.                                  | Relevant Records * r%           |      
+| False Positives (FP) | The number of irrelevant records reviewed at recall level.                             | Records Reviewed – TP           |
 | True Negatives (TN)  | The number of irrelevant records correctly not reviewed at recall level.               | Irrelevant Records – FP         |  
 | False Negatives (FN) | The number of relevant records not reviewed at recall level (missing relevant records) | Relevant Records – TP           | 
 
