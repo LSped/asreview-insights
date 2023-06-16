@@ -101,7 +101,8 @@ Values are retrieved at recall (r%).
 Specificity / True Negative Rate (TNR) 
 [Kusa et al. (2023)](https://www.sciencedirect.com/science/article/pii/S2667305323000182) propose to normalize the commonly used WSS measure for class imbalance (nWSS). Moreover, they showed that nWSS is equal to the True Negative Rate (TNR). The TNR is the proportion of irrelevant records that were correctly not reviewed at level of recall. This metric is useful to compare performance in terms of work saved across datasets and models while controlling for dataset class imbalance. 
 
-| Illustrating Example at 95% recall:    |
+Illustrating example at 95% recall:
+| Example            |                   |
 |--------------------|-------------------|
 | Total records 	 | 2000              |
 | Records Reviewed	 | 1100              |
