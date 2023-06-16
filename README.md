@@ -559,6 +559,7 @@ is the results of the metric. Some metrics are computed for multiple values.
 | `erf` | Labels | ERF | 0.10 |
 | `atd` | Average time to discovery (in label actions) | - | - |
 | `td` | Row number (starting at 0) | Number of records labeled | - |
+| `cm` | Recall  | Confusion matrix values at recall | 0.95 1 |
 
 
 ### Override default values
