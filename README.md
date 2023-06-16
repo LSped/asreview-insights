@@ -93,7 +93,7 @@ Values are retrieved at recall (r%).
 |                      | Definition                                                                             | Calculation                     |   
 |----------------------|----------------------------------------------------------------------------------------|---------------------------------|
 | True Postives (TP)   | The number of relevant records found at recall level.                                  | Relevant Records * r%           |      
-| False Postives (TP)  | The number of irrelevant records reviewed at recall level.                             | Records Reviewed – TP           |
+| False Postives (FP)  | The number of irrelevant records reviewed at recall level.                             | Records Reviewed – TP           |
 | True Negatives (TN)  | The number of irrelevant records correctly not reviewed at recall level.               | Irrelevant Records – FP         |  
 | False Negatives (FN) | The number of relevant records not reviewed at recall level (missing relevant records) | Relevant Records – TP           | 
 
@@ -102,7 +102,7 @@ Specificity / True Negative Rate (TNR)
 [Kusa et al. (2023)](https://www.sciencedirect.com/science/article/pii/S2667305323000182) propose to normalize the commonly used WSS measure for class imbalance (nWSS). Moreover, they showed that nWSS is equal to the True Negative Rate (TNR). The TNR is the proportion of irrelevant records that were correctly not reviewed at level of recall. This metric is useful to compare performance in terms of work saved across datasets and models while controlling for dataset class imbalance. 
 
 Illustrating example at 95% recall:
-| Example            |                   |
+|Example             |                   |
 |--------------------|-------------------|
 | Total records 	 | 2000              |
 | Records Reviewed	 | 1100              |
