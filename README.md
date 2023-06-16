@@ -92,10 +92,10 @@ Values are retrieved at recall (r%).
 
 |                      | Definition                                                                             | Calculation                     |   
 |----------------------|----------------------------------------------------------------------------------------|---------------------------------|
-| True Postives (TP)   | The number of relevant records found at recall level.                                  | Total Relevant Records * r%     |      
+| True Postives (TP)   | The number of relevant records found at recall level.                                  | Relevant Records * r%           |      
 | False Postives (TP)  | The number of irrelevant records reviewed at recall level.                             | Records Reviewed – TP           |
-| True Negatives (TN)  | The number of irrelevant records correctly not reviewed at recall level.               | Total Irrelevant Records – FP   |  
-| False Negatives (FN) | The number of relevant records not reviewed at recall level (missing relevant records) | Total Relevant Records – TP     | 
+| True Negatives (TN)  | The number of irrelevant records correctly not reviewed at recall level.               | Irrelevant Records – FP         |  
+| False Negatives (FN) | The number of relevant records not reviewed at recall level (missing relevant records) | Relevant Records – TP           | 
 
 
 Specificity / True Negative Rate (TNR) 
@@ -103,9 +103,8 @@ Specificity / True Negative Rate (TNR)
 
 Illustrating Example at 95% recall:
 
-
-| Total records 	 | 2000              |
 |--------------------|-------------------|
+| Total records 	 | 2000              |
 | Records Reviewed	 | 1100              |
 | Relevant Records 	 | 100               |
 | Irrelevant Records | 1900              |
